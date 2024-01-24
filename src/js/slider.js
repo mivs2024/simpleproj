@@ -12,7 +12,45 @@ $(document).ready(function() {
                 slidesToShow: 4,
                 prevArrow: '<button class="prev arrow"></button>',
                 nextArrow: '<button class="next arrow"></button>',
+                slidesToScroll: 4
+            }
+        }, {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 3,
+                prevArrow: '<button class="prev arrow"></button>',
+                nextArrow: '<button class="next arrow"></button>',
+                slidesToScroll: 2
+            }
+        }, {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 2,
+                prevArrow: '<button class="prev arrow"></button>',
+                nextArrow: '<button class="next arrow"></button>',
+                slidesToScroll: 2
+            }
+        }, {
+            breakpoint: 530,
+            settings: {
+                slidesToShow: 1,
+                prevArrow: '<button class="prev arrow"></button>',
+                nextArrow: '<button class="next arrow"></button>',
                 slidesToScroll: 1
+            }
+        }]
+    });    
+    $('.my_slider').slick({
+        infinite: true,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        responsive: [{
+            breakpoint: 1201,
+            settings: {
+                slidesToShow: 4,
+                prevArrow: '<button class="prev arrow"></button>',
+                nextArrow: '<button class="next arrow"></button>',
+                slidesToScroll: 4
             }
         }, {
             breakpoint: 992,
